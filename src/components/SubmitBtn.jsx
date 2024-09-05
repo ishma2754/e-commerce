@@ -11,9 +11,7 @@ const SubmitBtn = ({ text }) => {
       disabled={isSubmitting}
     >
       {isSubmitting ? (
-        <>
-          <span className="loading loading-spinner">sending...</span>
-        </>
+        <span className="loading loading-spinner">sending...</span>
       ) : (
         text || "submit"
       )}
@@ -22,7 +20,6 @@ const SubmitBtn = ({ text }) => {
 };
 
 export default SubmitBtn;
-
 
 /*
 When a form is submitted and triggers a route change (via navigate), react-router-dom starts tracking this navigation.

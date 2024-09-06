@@ -1,5 +1,5 @@
 import { FeaturedProducts, Hero } from "../components/index";
-import {customFetch} from '../utils/index'
+import {customFetch} from '../utils/index.jsx'
 
 
 const url = '/products?featured=true'

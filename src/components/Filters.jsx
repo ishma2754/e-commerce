@@ -2,6 +2,7 @@ import { Form, useLoaderData, Link } from "react-router-dom";
 import FormInput from "../components/FormInput";
 import FormSelect from "./FormSelect";
 import FormRange from "./FormRange";
+import FormCheckbox from "./FormCheckbox";
 
 const Filters = () => {
   const { meta } = useLoaderData();
@@ -36,7 +37,10 @@ const Filters = () => {
         size="select-sm"
       />
       {/**PRICE */}
-      <FormRange name='price' label='select price' size='range-sm'/>
+      <FormRange name='price' label='select price' 
+      size='range-sm'/>
+      {/**SHIPPING */}
+      <FormCheckbox name="shipping" label="free shipping" size="checkbox-sm"/>
       {/**BUTTONS */}
       <button type="submit" className="btn btn-primary btn-sm">
         search
